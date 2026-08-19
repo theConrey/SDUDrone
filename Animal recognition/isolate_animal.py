@@ -109,7 +109,7 @@ def pick_animal_contour(mask, min_area=300, max_area_frac=0.03):
     return max(candidates, key=cv2.contourArea)
 
 
-def main(path_for_mask="./input/img_9_edited.jpg", path_original="./input/img_9.jpg", out_dir="./output/flight"):
+def main(path_for_mask="./input/img_24_edited.jpg", path_original="./input/img_24.jpg", out_dir="./output/flight"):
     mask_source = cv2.imread(path_for_mask)
     if mask_source is None:
         raise FileNotFoundError(path_for_mask)
